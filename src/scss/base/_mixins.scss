@@ -26,17 +26,17 @@
 }
 
 @mixin container {
-    width: min(95%, 115rem);
+    width: min(95%, 175rem);
     margin: 0 auto;
 }
 
 @mixin container-xl {
-    width: min(95%, 90rem);
+    width: min(95%, 120rem);
     margin: 0 auto;
 }
 
 @mixin container-md {
-    width: min(95%, 60rem);
+    width: min(95%, 75rem);
     margin: 0 auto;
 }
 
