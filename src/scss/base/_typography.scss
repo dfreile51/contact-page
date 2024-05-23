@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+h1,
+h2 {
+    font-weight: v.$bold;
+}
+
+h1 {
+    font-size: 6.4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+label {
+    font-size: 1.4rem;
+}
+
+input,
+textarea {
+    font-size: 2rem;
+}

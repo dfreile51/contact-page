@@ -1,0 +1,81 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.form-container {
+    @include m.tablet {
+        @include m.container-xl;
+        margin: 6rem auto;
+    }
+
+    width: 100%;
+    margin: 6rem auto;
+
+    background-color: rgba(205, 213, 224, 0.2);
+    border-radius: 2.5rem;
+
+    .form {
+        @include m.phone {
+            padding: 3rem;
+        }
+
+        padding: 3rem 3rem 8rem 3rem;
+
+        &__grid {
+            @include m.tablet {
+                @include m.grid(2, 0rem);
+                column-gap: 2rem;
+            }
+
+            display: block;
+        }
+
+        &__container {
+            width: 100%;
+        }
+
+        &__label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        &__input,
+        &__select,
+        &__textarea {
+            width: 100%;
+            border: none;
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: v.$bold;
+            color: v.$dark;
+        }
+
+        &__input {
+            &--text::placeholder {
+                color: v.$gray;
+                font-weight: v.$regular;
+            }
+
+            &--button {
+                color: v.$purple;
+                font-size: 2rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &__select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url('/src/img/Expand_down.svg');
+            background-repeat: no-repeat;
+            background-position: 96% 50%;
+        }
+
+        &__textarea {
+            resize: vertical;
+            height: 20rem;
+        }
+    }
+}

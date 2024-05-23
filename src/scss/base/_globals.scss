@@ -1,0 +1,22 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$font-principal;
+    font-size: 1.6rem;
+    color: v.$white;
+
+    background-image: url('/src/img/bg-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

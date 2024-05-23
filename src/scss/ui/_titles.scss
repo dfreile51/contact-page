@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.titles {
+    @include m.laptop {
+        @include m.container-md;
+    }
+
+    @include m.container-sm;
+
+    &__title, &__subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: clamp(5rem, 2.25rem + 2.875vw, 6.4rem);
+    }
+
+    &__subtitle {
+        font-size: clamp(2.2rem, 0.75rem + 1.5625vw, 3.2rem);
+        font-weight: v.$regular;
+    }
+}
