@@ -8,16 +8,28 @@
 
     @include m.container-sm;
 
+    margin-bottom: 7.2rem;
+
     &__title, &__subtitle {
         text-align: center;
     }
 
     &__title {
-        font-size: clamp(5rem, 2.25rem + 2.875vw, 6.4rem);
+        @include m.laptop {
+            font-size: 6.4rem;
+        }
+
+        font-size: 4.4rem;
+        margin-bottom: 1.6rem;
+        font-weight: v.$semi-bold;
     }
 
     &__subtitle {
-        font-size: clamp(2.2rem, 0.75rem + 1.5625vw, 3.2rem);
+        @include m.laptop {
+            font-size: 3.2rem;
+        }
+
+        font-size: 1.8rem;
         font-weight: v.$regular;
     }
 }

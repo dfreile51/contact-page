@@ -2,7 +2,7 @@
 @use '../base/variables' as v;
 
 .form-container {
-    @include m.tablet {
+    @include m.laptop {
         @include m.container-xl;
         margin: 6rem auto;
     }
@@ -21,7 +21,7 @@
         padding: 3rem 3rem 8rem 3rem;
 
         &__grid {
-            @include m.tablet {
+            @include m.phone {
                 @include m.grid(2, 0rem);
                 column-gap: 2rem;
             }

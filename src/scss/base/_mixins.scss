@@ -31,7 +31,7 @@
 }
 
 @mixin container-xl {
-    width: min(95%, 120rem);
+    width: min(95%, 100rem);
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@
 }
 
 @mixin container-sm {
-    width: min(95%, 50rem);
+    width: min(95%, 40rem);
     margin: 0 auto;
 }
 

@@ -4,7 +4,9 @@
 .header {
     @include m.container;
 
+    margin-bottom: 2rem;
+
     &__container {
-        padding: 2rem 0;
+        padding: 2.4rem 0;
     }
 }
